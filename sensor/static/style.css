@@ -1,13 +1,30 @@
 * {
   color: red;
-  text-align: center;
 }
 
 p {
   font-size: larger;
 }
 
-body {
-  background-color: lightblue;
-  font-family: verdana;
+.grid_wrapper {
+  background-color: gray;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 'temp ab' 'big big';
+  height: 100vh;
+  border-radius: 10px;
+}
+
+.data {
+  grid-area: 'temp';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 90%;
+  width: 90%;
+  background-color: rgb(53, 53, 53);
+  border-radius: 10px;
+  margin: auto;
 }

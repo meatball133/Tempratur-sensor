@@ -9,8 +9,12 @@
     <title></title>
   </head>
   <body>
-    <p>Temperature: {{ temperature }} °C</p>
-    <p>Fahrenheit: {{ fahrenheit }} °F</p>
+    <div class="grid_wrapper">
+      <div class="data">
+        <p>Temperature: {{ temperature }} °C</p>
+        <p>Fahrenheit: {{ fahrenheit }} °F</p>
+      </div>
+    </div>
     <img src="data:image/png;base64, {{data}}" alt="" id="img" />
   </body>
 </html>
