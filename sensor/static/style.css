@@ -1,0 +1,13 @@
+* {
+  color: red;
+  text-align: center;
+}
+
+p {
+  font-size: larger;
+}
+
+body {
+  background-color: lightblue;
+  font-family: verdana;
+}
