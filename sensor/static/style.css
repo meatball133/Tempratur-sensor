@@ -1,5 +1,5 @@
 * {
-  color: red;
+  color: white;
 }
 
 p {
@@ -21,9 +21,6 @@ p {
 .data {
   margin: 20px;
   grid-area: tep;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 10px;
   width: calc(100% - 40px);
   height: calc(100% - 40px);
@@ -50,4 +47,36 @@ p {
   border-radius: 10px;
   width: calc(100% - 40px);
   height: calc(100% - 40px);
+}
+
+.temperature {
+  margin: 20px;
+  grid-area: tep;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(53, 53, 53);
+  border-radius: 10px;
+  margin: auto;
+}
+
+em {
+  background-color: rgb(92, 176, 204);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+h2{
+  text-align: center;
+}
+
+.temperature > div {
+  background-color: black;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  margin: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 10px;
 }

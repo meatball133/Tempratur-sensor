@@ -11,8 +11,17 @@
   <body>
     <div class="grid_wrapper">
       <div class="data">
-        <p>Temperature: {{ temperature }} °C</p>
-        <p>Fahrenheit: {{ fahrenheit }} °F</p>
+        <h2>Temperature</h2>
+        <div class ="temperature">
+          <div>
+          <p>Celcuis</p>
+          <p><em>{{ temperature }} °C</em></p>
+          </div>
+          <div>
+          <p>Fahrenheit</p>
+          <p><em>{{ fahrenheit }} °F</em></p>
+          </div>
+        </div>
       </div>
       <div class="graph">
         <img src="data:image/png;base64, {{data}}" alt="" id="img" />
