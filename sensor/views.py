@@ -17,6 +17,8 @@ def index(request):
 
 def plot():
     plt.switch_backend('AGG')
+    plt.figure(figsize=(8,2.5))
+    plt.style.use('seaborn-v0_8')
     x = np.array([1, 2, 3, 4, 5, 6, 7])
     y = np.array([10, 15, 12, 11, 17, 19, 10])
     X_Y_Spline = make_interp_spline(x, y)

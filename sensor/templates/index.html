@@ -14,7 +14,9 @@
         <p>Temperature: {{ temperature }} °C</p>
         <p>Fahrenheit: {{ fahrenheit }} °F</p>
       </div>
+      <div class="graph">
+        <img src="data:image/png;base64, {{data}}" alt="" id="img" />
+      </div>
     </div>
-    <img src="data:image/png;base64, {{data}}" alt="" id="img" />
   </body>
 </html>

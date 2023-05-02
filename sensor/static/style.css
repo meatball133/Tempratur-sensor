@@ -9,22 +9,45 @@ p {
 .grid_wrapper {
   background-color: gray;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: 'temp ab' 'big big';
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40% 60%;
+  grid-template-areas: 'tep abc' 'big big';
   height: 100vh;
   border-radius: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .data {
-  grid-area: 'temp';
+  margin: 20px;
+  grid-area: tep;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  height: 90%;
-  width: 90%;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
   background-color: rgb(53, 53, 53);
   border-radius: 10px;
   margin: auto;
+}
+
+.graph{
+  margin: 20px;
+  grid-area: big;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgb(53, 53, 53);
+  border-radius: 10px;
+  margin: auto;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+}
+
+.graph > img {
+  border-radius: 10px;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
 }
