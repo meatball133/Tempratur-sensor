@@ -6,6 +6,8 @@ from django.template import loader
 import io
 import base64
 import numpy as np
+from .models import Temprature
+from datetime import datetime
 
 Temperature = 69
 
@@ -37,7 +39,10 @@ def plot():
     buffer.close()
     return graph
 
+def update_database(temprature):
+    Temprature.objects.create(date=datetime.now(), temprature=temprature)
+
 
 
 def fahrenheit_converter(temperature):
-    return round((temperature - 32) * 1.8, 4)
+    return round((temperature * 1.8) - 32, 4)
